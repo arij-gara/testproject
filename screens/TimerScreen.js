@@ -1,8 +1,9 @@
 import  { useEffect, useState } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View ,TouchableOpacity} from 'react-native'
 import moment from 'moment/moment'
+import { useNavigation } from '@react-navigation/native';
 export default function TimerScreen () {
-
+  const navigation = useNavigation();
 const [currentdate,setcurrentdate]= useState("")
 const [countdown, setCountdown] = useState([]);
 
@@ -56,7 +57,23 @@ const [countdown, setCountdown] = useState([]);
        }, []);
 
     return (
-      <View className=" bg-lime-200 flex-1  items-center pt-32  space-y-32">
+      <View className=" bg-lime-200 flex-1  items-center pt-32  space-y-28">
+
+        {/* displaying  the botton that leads to search Screen */}
+              <View>
+              <View className="w-[220]">
+                <TouchableOpacity
+                 className=" bg-lime-700  p-3  rounded-2xl mb-3"
+                 onPress={()=> navigation.navigate("SearchScreen")}
+                >
+                  <Text  className="text-lg font-bold text-white text-center"> Search Screen </Text>
+                </TouchableOpacity>
+
+              </View>
+              
+              
+              </View>
+
         {/* dispalying current date */}
         <View className="items-center  space-y-6">
         <Text className="font-bold text-xl">  The current Date:  </Text>
