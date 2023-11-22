@@ -16,7 +16,7 @@ export default  function FilterScreen() {
        {/* search by keywords bar */}
         <View className=" justify-center items-center">
        <View className="bg-white/10  mt-5 mb-3 w-[320] h-[50] rounded-2xl  justify-center p-4 ">
-             <TextInput  placeholder="Search by keywords... "  placeholderTextColor={'gray'}/>
+             <TextInput   placeholder="Search by keywords... "  placeholderTextColor={'gray'}/>
              
        </View>
        </View>
@@ -28,7 +28,7 @@ export default  function FilterScreen() {
         <View className=" flex-row flex-wrap space-y-4 items-center ml-4 mr-4 mb-2">
           {/* element */}
           <View className="flex-row items-center mr-5 ">
-            <View className="w-[29] h-[29] rounded-xl border-2 border-white/40 mr-2">
+            <View className="w-[29] h-[29] rounded-xl border-0.5 border-white/40 mr-2">
             </View>
             <Text className="text-white/40 text-xs">All</Text>
           </View>
@@ -36,7 +36,7 @@ export default  function FilterScreen() {
 
          {/* element */}
          <View className="ml-4 flex-row items-center mr-3 ">
-            <View style={{ backgroundColor : "#3661EB"}} className="w-[29] h-[29] rounded-xl border-2 items-center justify-center border-blue-600 mr-3">
+            <View style={{ backgroundColor : "#3661EB"}} className="w-[29] h-[29] rounded-xl border-0.5 items-center justify-center  mr-3">
               <Image source={ require("../assets/images/Path3.png")} />
             </View>
             
@@ -45,33 +45,33 @@ export default  function FilterScreen() {
           </View>
           {/* element */}
          <View className="ml-4 flex-row items-center ">
-            <View className="w-[29] h-[29] rounded-xl border-2 border-white/40 mr-2">
+            <View className="w-[29] h-[29] rounded-xl border-0.5 border-white/40 mr-2">
             </View>
             <Text className="text-white/40 text-xs">Tawasol</Text>
           </View>
           {/* element */}
          <View className=" flex-row items-center mr-10">
-            <View className="w-[29] h-[29] rounded-xl border-2 border-white/40 mr-2">
+            <View className="w-[29] h-[29] rounded-xl border-0.5 border-white/40 mr-2">
             </View>
             <Text className="text-white/40 text-xs">Events & Meetings</Text>
           </View>
 
            {/* element */}
          <View className=" flex-row items-center ">
-            <View className="w-[29] h-[29] rounded-xl border-2 border-white/40 mr-2">
+            <View className="w-[29] h-[29] rounded-xl border-0.5 border-white/40 mr-2">
             </View>
             <Text className="text-white/40 text-xs">Executive Counsil</Text>
           </View>
            {/* element */}
          <View className=" flex-row items-center mr-8">
-            <View className="w-[29] h-[29] rounded-xl border-2 border-white/40 mr-2">
+            <View className="w-[29] h-[29] rounded-xl border-0.5 border-white/40 mr-2">
             </View>
             <Text className="text-white/40 text-xs">News /Artical</Text>
           </View>
  
            {/* element */}
          <View className=" flex-row items-center ">
-            <View className="w-[29] h-[29] rounded-xl border-2 border-white/40 mr-2">
+            <View className="w-[29] h-[29] rounded-xl border-0.5 border-white/40 mr-2">
             </View>
             <Text className="text-white/40 text-xs">X</Text>
           </View>
@@ -107,28 +107,28 @@ export default  function FilterScreen() {
           {/* elements */}
           {/* element */}
          <View className=" flex-row items-center ml-3 mr-2">
-            <View className="w-[29] h-[29] rounded-xl border-2 border-white/40 mr-1">
+            <View className="w-[29] h-[29] rounded-xl border-0.5 border-white/40 mr-1">
             </View>
             <Text className="text-white/40 text-xs mr-2">All</Text>
           </View>
 
            {/* element */}
          <View className=" flex-row items-center ">
-            <View style={{ backgroundColor : "#3661EB"}} className="w-[29] h-[29]  items-center justify-center rounded-xl  border-2 border-blue-600 mr-1">
+            <View style={{ backgroundColor : "#3661EB"}} className="w-[29] h-[29]  items-center justify-center rounded-xl  border-0.5 mr-1">
             <Image source={ require("../assets/images/Path3.png")} />
             </View>
             <Text className="text-white  text-xs pr-1 mr-2">Approved</Text>
           </View>
            {/* element */}
          <View className=" flex-row items-center mr-4 ">
-            <View className="w-[29] h-[29] rounded-xl border-2 border-white/40 mr-1">
+            <View className="w-[29] h-[29] rounded-xl border-0.5 border-white/40 mr-1">
             </View>
             <Text className="text-white/40 text-xs">Decline</Text>
           </View>
  
            {/* element */}
          <View className=" flex-row items-center ">
-            <View className="w-[29] h-[29] rounded-xl border-2 border-white/40 mr-1">
+            <View className="w-[29] h-[29] rounded-xl border-0.5 border-white/40 mr-1">
             </View>
             <Text className="text-white/40 text-xs">Waiting</Text>
           </View>
