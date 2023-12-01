@@ -10,9 +10,10 @@ const [countdown, setCountdown] = useState([]);
   useEffect(() => {
     const currentDatewithmoment =moment().format('MMMM Do YYYY, h:mm:ss a'); 
      setcurrentdate(currentDatewithmoment); 
-
+     
     const getNextEvent = () => {
       const today = moment();
+      
       let nextEvent;
 
       // Dates for the events
@@ -21,6 +22,7 @@ const [countdown, setCountdown] = useState([]);
         moment().day("Thursday").hour(2).minute(37).second(0),
         moment().day("Saturday").hour(14).minute(54).second(0)
       ];
+      
 
       // Find the next upcoming event
       for (let i = 0; i < eventDates.length; i++) {
